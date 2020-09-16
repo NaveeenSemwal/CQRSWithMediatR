@@ -13,6 +13,8 @@ namespace OrderManagementCQRS.Controllers
 {
     /// <summary>
     /// https://medium.com/@letienthanh0212/cqrs-and-mediator-in-net-core-project-c0b477eab6e9
+    /// 
+    /// https://dev.azure.com/dotnetwindowsapp/CQRSWithMediatR/_git/CQRSWithMediatR
     /// </summary>
 
 
@@ -31,7 +33,10 @@ namespace OrderManagementCQRS.Controllers
         //    _orderByIdQueryHandler = orderByIdQueryHandler;
         //}
 
-
+        /// <summary>
+        /// MediatR will maintain all the dependecies
+        /// </summary>
+        /// <param name="mediator"></param>
         public OrderController(IMediator mediator)
         {
             _mediator = mediator;
